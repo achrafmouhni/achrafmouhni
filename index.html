@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Achraf Mouhni's Portfolio</title>
+    <meta name="description" content="This is my portfolio." />
+    <meta name="keywords" content="3d, layout, html, css, bending, javascript, Portfolio" />
+    <meta name="author" content="  Achraf Mouhni" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="stylesheet" href="https://use.typekit.net/yxd7izj.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/split.css" />
+    <script>
+    document.documentElement.className = "js";
+    var supportsCssVars = function() {
+        var e,
+            t = document.createElement("style");
+        return (
+            (t.innerHTML = "root: { --tmp-var: bold; }"),
+            document.head.appendChild(t),
+            (e = !!(
+                window.CSS &&
+                window.CSS.supports &&
+                window.CSS.supports("font-weight", "var(--tmp-var)")
+            )),
+            t.parentNode.removeChild(t),
+            e
+        );
+    };
+    supportsCssVars() ||
+        alert(
+            "Please view this demo in a modern browser that supports CSS Variables."
+        );
+    </script>
+</head>
+
+<body class="demo-3 loading">
+    <main>
+        <div class="message">Some message for mobile (if needed).</div>
+        <div class="frame">
+            <a href="index.html" class="link link--ersa" class="frame__title"">
+                <span>Achraf Mouhni</span>
+            </a>
+            <div class="frame__links" class="content__item">
+                <a href="index.html" class="link link--eirene"><span>Home</span></a>
+                <a href="myWork.html" class="link link--eirene"><span>My Work</span></a>
+                <a href="contact.html" class="link link--eirene"><span>Contact</span></a>
+            </div>
+
+        </div>
+        <div class="content">
+            <div class="fold-content" id="base-content">
+                <!-- CONTENT INSIDE HERE -->
+                <p class="content__type">
+                    <span class="content__type-special">Hello!</span> My name is Achraf Mouhni and I enjoy creating things that live on the internet.
+                </p>
+                <img class="content__img" src="img/15.jpg" alt="Some image" />
+                <p class="content__type">
+                    I am currently a final year student of Bsc Hons Degree in Computer Science at the University of Wolverhampton.
+                </p>
+                <img class="content__img" src="img/17.jpg" alt="Some image" />
+                <p class="content__type">
+                    I am a pretty chill person Born in Morocco 🇲🇦. I like being with friends, playing football, videogames and going to the gym when I have motivation to do so. The environnement that I'm in is super important. I'm highly motivated to grow as a developer and learn from others. Being kind and teaching people what i know is also something that drives me
+                </p>
+                <img class="content__img" src="img/16.jpg" alt="Some image" />
+                <p class="content__type"><span class="content__type-special">Wanna Chat ?</span> <br />feel free to hit me up for whatever, i'll always be there to reply !</p>
+            </div>
+            <div class="screen" id="fold-wrapper"></div>
+            <button class="btn-debug" id="btn-debug">See Planes</button>
+        </div>
+    </main>
+    <script src="./js/imagesloaded.pkgd.min.js"></script>
+    <script src="./js/split.js"></script>
+</body>
+
+</html>
